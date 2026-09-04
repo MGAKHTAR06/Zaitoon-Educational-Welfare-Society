@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Zaitoon Educational &amp; Welfare Society</title>
+<meta name="description" content="Get in touch with Zaitoon Educational &amp; Welfare Society about donating, partnering, volunteering or our work in Siddharth Nagar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Zaitoon, home">
+      <svg class="sprig-mini" viewBox="0 0 40 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path class="stem" d="M20 48 C 16 36 18 24 30 8"/><g class="leaf"><ellipse cx="30" cy="9" rx="5" ry="9" transform="rotate(20 30 9)"/><ellipse cx="24" cy="20" rx="5" ry="9" transform="rotate(-40 24 20)"/><ellipse cx="29" cy="24" rx="4.5" ry="8" transform="rotate(35 29 24)"/><ellipse cx="19" cy="33" rx="4.5" ry="8" transform="rotate(-45 19 33)"/></g><circle class="olive-fruit" cx="27" cy="17" r="2.6"/></svg>
+      <span>Zaitoon<small>Educational &amp; Welfare Society</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a class="btn btn--gold nav-cta" href="get-involved.html#donate">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> · Contact</p>
+      <h1>Contact us</h1>
+      <p>Questions about our work, a donation, a partnership or volunteering? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="split-copy reveal">
+        <p class="eyebrow">Send a message</p>
+        <h2>Write to us</h2>
+        <!-- NOTE: this form is a front-end placeholder. Connect it to an email service
+             (e.g. Formspree, Getform, Netlify Forms) or your own backend before going live. -->
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn--gold">Send message</button>
+            </div>
+            <p id="form-note" hidden style="color:var(--olive); font-weight:600;">Thank you — connect this form to your email service to receive messages.</p>
+          </div>
+        </form>
+      </div>
+
+      <div class="split-media reveal">
+        <div class="card" style="background:var(--paper-2);">
+          <p class="eyebrow">Reach us directly</p>
+          <ul class="info-list" style="margin-top:.5rem;">
+            <li><div class="k">Email</div><div class="v"><a href="mailto:[email@thezaitoon.org]">[email@thezaitoon.org]</a></div></li>
+            <li><div class="k">Phone</div><div class="v">[+91 / +44 phone number]</div></li>
+            <li><div class="k">Address</div><div class="v">[Street / village], Siddharth Nagar,<br>Uttar Pradesh, India [PIN code]</div></li>
+            <li><div class="k">Follow us</div><div class="v">[Facebook] · [Instagram] · [YouTube]</div></li>
+          </ul>
+        </div>
+        <div class="photo-ph" data-ratio="wide" style="margin-top:1.25rem;">
+          <!-- SWAP: embed a Google Map, or an image of the location -->
+          <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span class="ph-label">Map — embed Google Maps location</span>
+          <span class="ph-note">Add map</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Prefer to give straight away?</h2>
+        <p>You can support our work today — every gift keeps a child learning.</p>
+        <div class="btn-row"><a class="btn btn--gold" href="get-involved.html#donate">Donate now</a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html"><svg class="sprig-mini" viewBox="0 0 40 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path class="stem" d="M20 48 C 16 36 18 24 30 8"/><g class="leaf"><ellipse cx="30" cy="9" rx="5" ry="9" transform="rotate(20 30 9)"/><ellipse cx="24" cy="20" rx="5" ry="9" transform="rotate(-40 24 20)"/><ellipse cx="29" cy="24" rx="4.5" ry="8" transform="rotate(35 29 24)"/><ellipse cx="19" cy="33" rx="4.5" ry="8" transform="rotate(-45 19 33)"/></g><circle class="olive-fruit" cx="27" cy="17" r="2.6"/></svg><span>Zaitoon</span></a>
+      <p>Bringing education, opportunity and dignity to Siddharth Nagar, Uttar Pradesh — since 2010.</p>
+    </div>
+    <div><h4>Explore</h4><ul class="footer-links"><li><a href="about.html">About us</a></li><li><a href="projects.html">Projects</a></li><li><a href="get-involved.html">Get involved</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Support</h4><ul class="footer-links"><li><a href="get-involved.html#donate">Donate</a></li><li><a href="get-involved.html#sponsor">Sponsor a child</a></li><li><a href="get-involved.html#partner">Partner with us</a></li><li><a href="get-involved.html#volunteer">Volunteer</a></li></ul></div>
+    <div><h4>Get in touch</h4><ul class="footer-links"><li><a href="mailto:[email@thezaitoon.org]">[email@thezaitoon.org]</a></li><li>Siddharth Nagar, Uttar Pradesh, India</li><li>[phone number]</li></ul></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2025</span> Zaitoon Educational &amp; Welfare Society · Reg. no. [add registration]</span>
+    <span class="tagline">Aspiring a just society</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
