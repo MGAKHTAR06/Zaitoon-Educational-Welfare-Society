@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+<link rel="apple-touch-icon" href="assets/images/logo.png">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,7 +18,7 @@
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Zaitoon, home">
-      <svg class="sprig-mini" viewBox="0 0 40 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path class="stem" d="M20 48 C 16 36 18 24 30 8"/><g class="leaf"><ellipse cx="30" cy="9" rx="5" ry="9" transform="rotate(20 30 9)"/><ellipse cx="24" cy="20" rx="5" ry="9" transform="rotate(-40 24 20)"/><ellipse cx="29" cy="24" rx="4.5" ry="8" transform="rotate(35 29 24)"/><ellipse cx="19" cy="33" rx="4.5" ry="8" transform="rotate(-45 19 33)"/></g><circle class="olive-fruit" cx="27" cy="17" r="2.6"/></svg>
+      <img src="assets/images/logo.png" class="brand-logo" alt="Zaitoon logo">
       <span>Zaitoon<small>Educational &amp; Welfare Society</small></span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
@@ -34,15 +36,61 @@
 <main id="main">
 
   <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div class="page-hero-copy">
+        <p class="breadcrumb"><a href="index.html">Home</a> · Get Involved</p>
+        <h1>Get involved</h1>
+        <p>However you choose to help, you're helping a child in Siddharth Nagar into a classroom — and out of a cycle that has trapped generations.</p>
+      </div>
+      <div class="page-hero-media reveal">
+        <div class="photo-ph photo-ph--dark" data-ratio="wide">
+          <!-- SWAP: assets/images/get-involved-header.jpg -->
+          <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h3l1.5-2h7L18 7h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="ph-label">Photo — header image</span>
+          <span class="ph-note">Add photo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== WAYS TO DONATE (top) ===================== -->
+  <section class="section" id="donate">
     <div class="container">
-      <p class="breadcrumb"><a href="index.html">Home</a> · Get Involved</p>
-      <h1>Get involved</h1>
-      <p>However you choose to help, you're helping a child in Siddharth Nagar into a classroom — and out of a cycle that has trapped generations.</p>
+      <div class="reveal measure" style="margin-bottom:2rem;">
+        <p class="eyebrow">Ways to donate</p>
+        <h2>Give directly to the Society</h2>
+        <p>You can donate straight into the Society's bank account. Please choose the account for your location, and use the reference <strong>DONATION</strong> (books, food, building work, etc.).</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="bank-box reveal">
+          <h3>Donating from abroad</h3>
+          <p class="bank-ref">Ref: DONATION (books, food, building work, etc.)</p>
+          <dl class="bank-table">
+            <dt>Account name</dt><dd>Zaitoon Educational and Welfare Society</dd>
+            <dt>Account no.</dt><dd>40533266922</dd>
+            <dt>IFSC code</dt><dd>SBIN0000691</dd>
+            <dt>Swift code</dt><dd>SBININBB104</dd>
+            <dt>Bank</dt><dd>State Bank of India, New Delhi Main Branch, 11 Sansad Marg, New Delhi – 110001</dd>
+          </dl>
+        </div>
+        <div class="bank-box reveal">
+          <h3>Donating within India</h3>
+          <p class="bank-ref">Direct deposit to the Society's bank</p>
+          <dl class="bank-table">
+            <dt>Account name</dt><dd>Zaitoon Educational and Welfare Society</dd>
+            <dt>Account no.</dt><dd>60069388609</dd>
+            <dt>IFSC code</dt><dd>MAHB0001405</dd>
+            <dt>Bank</dt><dd>Bank of Maharashtra</dd>
+            <dt>Bank address</dt><dd>Hotel City Heart, Gandhi Nagar, Tetri Bazar, Siddharth Nagar – 272207</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="reveal" style="margin-top:1.5rem; color:var(--muted); font-size:.95rem;"><strong>Registered address of the Society:</strong> Shishahanyan Alida Pur, Shohratgarh, Siddharth Nagar, UP 272202, India</p>
     </div>
   </section>
 
+
   <!-- DONATE -->
-  <section class="section" id="donate">
+  <section class="section" id="giving">
     <div class="container">
       <div class="reveal measure" style="margin-bottom:2rem;">
         <p class="eyebrow">Donate</p>
@@ -56,38 +104,14 @@
       </div>
       <div class="reveal" style="margin-top:1.75rem;">
         <div class="btn-row">
-          <a class="btn btn--gold" href="#give-details">Give a one-off gift</a>
-          <a class="btn btn--olive" href="#give-details">Give monthly</a>
+          <a class="btn btn--gold" href="#donate">Give a one-off gift</a>
+          <a class="btn btn--olive" href="#donate">Give monthly</a>
         </div>
-        <p style="color:var(--muted); font-size:.9rem; margin-top:.75rem;">Suggested amounts are examples — set your own real amounts, and connect your donation platform (e.g. a donate button, bank transfer, or payment link) below.</p>
+        <p style="color:var(--muted); font-size:.9rem; margin-top:.75rem;">Suggested amounts are examples — set your own real amounts, and or set up an online donation button. The Society's bank details are shown at the top of this page.</p>
       </div>
     </div>
   </section>
 
-  <!-- GIVE DETAILS (placeholder for real payment info) -->
-  <section class="section section--paper2" id="give-details">
-    <div class="container split">
-      <div class="split-copy reveal">
-        <p class="eyebrow">How to give</p>
-        <h2>Ways to donate</h2>
-        <ul class="leaf-list">
-          <li><strong>Online:</strong> [add your donation link / embed a donate button here]</li>
-          <li><strong>Bank transfer:</strong> [account name, sort code / IFSC, account number]</li>
-          <li><strong>UPI / mobile:</strong> [add UPI ID or QR code]</li>
-          <li><strong>By cheque:</strong> [payee name and postal address]</li>
-        </ul>
-        <p style="color:var(--muted); font-size:.92rem; margin-top:1rem;">Tip: if you register with a payment provider (e.g. Razorpay, Stripe, PayPal, or a UK platform if you have UK charitable status), you can drop the button straight into this section.</p>
-      </div>
-      <div class="split-media reveal">
-        <div class="photo-ph" data-ratio="square">
-          <!-- SWAP: assets/images/donate-qr.png or a photo -->
-          <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 14v.01M17 21h4v-4"/></svg>
-          <span class="ph-label">Donation QR code / payment image</span>
-          <span class="ph-note">Add image</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- OTHER WAYS -->
   <section class="section">
@@ -132,14 +156,14 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a class="brand" href="index.html"><svg class="sprig-mini" viewBox="0 0 40 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path class="stem" d="M20 48 C 16 36 18 24 30 8"/><g class="leaf"><ellipse cx="30" cy="9" rx="5" ry="9" transform="rotate(20 30 9)"/><ellipse cx="24" cy="20" rx="5" ry="9" transform="rotate(-40 24 20)"/><ellipse cx="29" cy="24" rx="4.5" ry="8" transform="rotate(35 29 24)"/><ellipse cx="19" cy="33" rx="4.5" ry="8" transform="rotate(-45 19 33)"/></g><circle class="olive-fruit" cx="27" cy="17" r="2.6"/></svg><span>Zaitoon</span></a>
-      <p>Bringing education, opportunity and dignity to Siddharth Nagar, Uttar Pradesh — since 2010.</p>
+      <p>Bringing education, opportunity and dignity to Siddharth Nagar, Uttar Pradesh — for over 25 years.</p>
     </div>
     <div><h4>Explore</h4><ul class="footer-links"><li><a href="about.html">About us</a></li><li><a href="projects.html">Projects</a></li><li><a href="get-involved.html">Get involved</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div><h4>Support</h4><ul class="footer-links"><li><a href="get-involved.html#donate">Donate</a></li><li><a href="get-involved.html#sponsor">Sponsor a child</a></li><li><a href="get-involved.html#partner">Partner with us</a></li><li><a href="get-involved.html#volunteer">Volunteer</a></li></ul></div>
-    <div><h4>Get in touch</h4><ul class="footer-links"><li><a href="mailto:[email@thezaitoon.org]">[email@thezaitoon.org]</a></li><li>Siddharth Nagar, Uttar Pradesh, India</li><li>[phone number]</li></ul></div>
+    <div><h4>Get in touch</h4><ul class="footer-links"><li><a href="mailto:[email@thezaitoon.org]">[email@thezaitoon.org]</a></li><li>Shishahanyan Alida Pur, Shohratgarh,<br>Siddharth Nagar, UP 272202, India</li><li>[phone number]</li></ul></div>
   </div>
   <div class="container footer-bottom">
-    <span>© <span id="year">2025</span> Zaitoon Educational &amp; Welfare Society · Reg. no. [add registration]</span>
+    <span>© <span id="year">2025</span> Zaitoon Educational &amp; Welfare Society · Society Reg. No. G-46588 · FCRA No. 137360019</span>
     <span class="tagline">Aspiring a just society</span>
   </div>
 </footer>
