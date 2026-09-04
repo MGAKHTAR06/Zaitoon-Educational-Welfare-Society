@@ -379,3 +379,14 @@ a:focus-visible,.btn:focus-visible,button:focus-visible,input:focus-visible,text
 .bank-table dt{ font-weight:600; color:var(--ink); }
 .bank-table dd{ margin:0; color:var(--text); }
 @media (max-width:520px){ .bank-table{ grid-template-columns:1fr; gap:.1rem; } .bank-table dd{ margin-bottom:.55rem; } }
+
+/* ===================================================================
+   REAL IMAGES (replacing placeholders)
+   =================================================================== */
+.media{ display:block; width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--radius); background:var(--paper-2); }
+.media.ratio-wide{ aspect-ratio:16/9; }
+.media.ratio-square{ aspect-ratio:1/1; }
+.media.ratio-tall{ aspect-ratio:3/4; }
+.media.ratio-4x3{ aspect-ratio:4/3; }
+.pcard .media{ border-radius:0; aspect-ratio:4/3; }
+.founder-photo-img{ display:block; width:100%; height:clamp(280px,40vw,520px); object-fit:cover; margin-top:2rem; }
