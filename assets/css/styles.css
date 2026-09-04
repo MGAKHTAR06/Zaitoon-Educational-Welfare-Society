@@ -126,7 +126,7 @@ p{ margin:0 0 1rem; }
 .nav-toggle[aria-expanded="true"] span::before{ transform:translateY(6px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] span::after{ transform:translateY(-6px) rotate(-45deg); }
 
-@media (max-width:880px){
+@media (max-width:1024px){
   .nav-toggle{ display:inline-flex; }
   .nav-links{
     position:absolute; left:0; right:0; top:100%;
@@ -432,3 +432,40 @@ a:focus-visible,.btn:focus-visible,button:focus-visible,input:focus-visible,text
 
 /* flagship image: fit the WHOLE image in (no cropping) */
 .flagship-media img{ object-fit:contain; background:#1b2a18; }
+
+/* ===================================================================
+   v5 — Blue Ink School International (blue theme)
+   =================================================================== */
+.section--blue{ background:#13294a; color:#c7d4e6; }
+.section--blue h2, .section--blue h3{ color:#fff; }
+.section--blue p{ color:#c7d4e6; }
+.section--blue .eyebrow{ color:#8fbde9; }
+.section--blue .leaf-list li::before{ background:#8fbde9; }
+.section--blue .btn--ghost{ color:#fff; border-color:rgba(255,255,255,.4); }
+.section--blue .btn--ghost:hover{ color:#fff; border-color:#fff; }
+.section--blue .flagship-copy strong{ color:#fff; }
+.section--blue .flagship-media img{ object-fit:cover; background:#0f2138; }
+
+.page-hero--blue{ background:#13294a; }
+.page-hero--blue h1{ color:#fff; }
+.page-hero--blue p{ color:#c7d4e6; }
+.page-hero--blue .breadcrumb, .page-hero--blue .breadcrumb a{ color:#9fb4cf; }
+.page-hero--blue .breadcrumb a:hover{ color:#8fbde9; }
+
+/* ===================================================================
+   v6 — nav dropdown (Blue Ink School › Boarding facility)
+   =================================================================== */
+.nav-links .has-sub{ position:relative; }
+.nav-links .has-sub > a::after{ content:"⌄"; font-size:.7em; margin-left:.35em; opacity:.65; }
+.subnav{ list-style:none; margin:0; padding:0; }
+@media (min-width:1025px){
+  .subnav{ position:absolute; top:calc(100% + 2px); left:0; min-width:210px; background:var(--paper); border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow); padding:.35rem; display:none; z-index:70; }
+  .has-sub:hover > .subnav, .has-sub:focus-within > .subnav{ display:block; }
+  .subnav a{ display:block; padding:.5rem .7rem; border-radius:8px; font-weight:600; font-size:.95rem; color:var(--text); text-decoration:none; }
+  .subnav a:hover{ background:var(--paper-2); color:var(--ink); }
+}
+@media (max-width:1024px){
+  .nav-links .has-sub > a::after{ content:""; }
+  .subnav a{ display:block; padding:.5rem .6rem .5rem 1.5rem; font-size:.92rem; font-weight:600; color:var(--muted); text-decoration:none; }
+  .subnav a:hover{ color:var(--ink); }
+}
