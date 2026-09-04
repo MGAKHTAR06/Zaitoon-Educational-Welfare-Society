@@ -50,3 +50,35 @@
     });
   }
 })();
+
+/* Slideshows / roller banners */
+(function () {
+  document.querySelectorAll(".slideshow").forEach(function (ss) {
+    var slides = ss.querySelectorAll(".slide");
+    if (slides.length < 2) return;
+    var dotsWrap = ss.querySelector(".ss-dots");
+    var i = 0, timer;
+    if (dotsWrap) {
+      slides.forEach(function (_, idx) {
+        var b = document.createElement("button");
+        b.className = "ss-dot" + (idx === 0 ? " active" : "");
+        b.setAttribute("aria-label", "Go to slide " + (idx + 1));
+        b.addEventListener("click", function () { go(idx); reset(); });
+        dotsWrap.appendChild(b);
+      });
+    }
+    function go(n) {
+      slides[i].classList.remove("active");
+      if (dotsWrap) dotsWrap.children[i].classList.remove("active");
+      i = (n + slides.length) % slides.length;
+      slides[i].classList.add("active");
+      if (dotsWrap) dotsWrap.children[i].classList.add("active");
+    }
+    function reset() { clearInterval(timer); timer = setInterval(function () { go(i + 1); }, 4500); }
+    var np = ss.querySelector(".ss-arrow.next");
+    var pp = ss.querySelector(".ss-arrow.prev");
+    if (np) np.addEventListener("click", function () { go(i + 1); reset(); });
+    if (pp) pp.addEventListener("click", function () { go(i - 1); reset(); });
+    reset();
+  });
+})();
