@@ -109,4 +109,4 @@ Zaitoon Educational and Welfare Society — Society Reg. No. G-46588 · FCRA Reg
 
 ## 👤 Author
 
-Website designed and built by **Musab** — [LinkedIn](https://www.linkedin.com/in/musab-akhtar/) · [Portfolio](#)
+Website designed and built by **Musab** — [LinkedIn](https://www.linkedin.com/in/musab-akhtar/) 
